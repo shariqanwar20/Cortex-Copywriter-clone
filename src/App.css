@@ -1,38 +1,163 @@
-.App {
+.navbar-toggler {
+  border-radius: 50%;
+  padding: 0.3%;
+}
+.navbar-toggler:hover {
+  background-image: linear-gradient(to right, rgb(139, 139, 139), rgb(0, 0, 0));
+}
+.btn {
+  background-image: linear-gradient(rgb(205, 247, 243), rgb(0, 245, 255));
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 10px;
+}
+.cortex-text,
+.copywriter-text,
+.description-text {
+  font-family: "Montserrat";
+}
+.rainbow-anim > span {
+  color: #1eff00;
+  font-size: large;
+  font-weight: 500;
+}
+.intro-anim {
+  overflow: hidden;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  .intro-anim {
+    padding: 0px;
+  }
+  #brain,
+  #base,
+  #light,
+  .uxImage,
+  .websiteImage,
+  .contentImage {
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.intro-anim > img {
+  display: inline-block;
+  width: 550px;
+  position: absolute;
+}
+#light {
+  position: inherit;
+}
+.cortex-text {
+  font-size: 100px;
+  font-weight: bolder;
+}
+.copywriter-text {
+  font-size: 50px;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.description-text {
+  font-size: large;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ux-header {
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: bold;
 }
+.ux-description {
+  font-weight: bold;
+}
+
+.ux-list-1 > ul,
+.ux-list-2 > ul,
+.ux-list-3 > ul {
+  margin: 0 auto;
+}
+
+.ux-list-1 > ul > li::before,
+.ux-list-2 > ul > li::before,
+.ux-list-3 > ul > li::before {
+  content: " \00b7";
+}
+.ux-list-1 > ul > li,
+.ux-list-2 > ul > li,
+.ux-list-3 > ul > li {
+  display: inline;
+  float: left;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.img-container {
+  display: inline-block;
+}
+.inner-img-container {
+  margin: 5px;
+}
+.about-heading-block {
+  display: inline-block;
+}
+.about-heading {
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px;
+  font-size: xx-large;
+  width: fit-content;
+}
+.about-heading-block > p {
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* .rainbow-char1 { animation-name: rainbow1; }
+@keyframes rainbow1 { from {filter: hue-rotate(0deg); } to {filter: hue-rotate(360deg); }  }
+
+.rainbow-char2 { animation-name: rainbow2; }
+@keyframes rainbow2 { from {filter: hue-rotate(25deg); } to {filter: hue-rotate(385deg); }  }
+
+.rainbow-char3 { animation-name: rainbow3; }
+@keyframes rainbow3 { from {filter: hue-rotate(50deg); } to {filter: hue-rotate(410deg); }  }
+
+.rainbow-char4 { animation-name: rainbow4; }
+@keyframes rainbow4 { from {filter: hue-rotate(75deg); } to {filter: hue-rotate(435deg); }  }
+
+.rainbow-char5 { animation-name: rainbow5; }
+@keyframes rainbow5 { from {filter: hue-rotate(100deg); } to {filter: hue-rotate(460deg); }  }
+
+.rainbow-char6 { animation-name: rainbow6; }
+@keyframes rainbow6 { from {filter: hue-rotate(125deg); } to {filter: hue-rotate(485deg); }  }
+
+.rainbow-char7 { animation-name: rainbow7; }
+@keyframes rainbow7 { from {filter: hue-rotate(150deg); } to {filter: hue-rotate(510deg); }  }
+
+.rainbow-char8 { animation-name: rainbow8; }
+@keyframes rainbow8 { from {filter: hue-rotate(175deg); } to {filter: hue-rotate(535deg); }  }
+
+.rainbow-char9 { animation-name: rainbow9; }
+@keyframes rainbow9 { from {filter: hue-rotate(200deg); } to {filter: hue-rotate(560deg); }  }
+
+.rainbow-char10 { animation-name: rainbow10; }
+@keyframes rainbow10 { from {filter: hue-rotate(225deg); } to {filter: hue-rotate(585deg); }  }
+
+.rainbow-char11 { animation-name: rainbow11; }
+@keyframes rainbow11 { from {filter: hue-rotate(250deg); } to {filter: hue-rotate(610deg); }  }
+
+.rainbow-char12 { animation-name: rainbow12; }
+@keyframes rainbow12 { from {filter: hue-rotate(275deg); } to {filter: hue-rotate(635deg); }  }
+
+.rainbow-char13 { animation-name: rainbow13; }
+@keyframes rainbow13 { from {filter: hue-rotate(300deg); } to {filter: hue-rotate(660deg); }  }
+
+.rainbow-char14 { animation-name: rainbow14; }
+@keyframes rainbow14 { from {filter: hue-rotate(325deg); } to {filter: hue-rotate(685deg); }  }
+
+.rainbow-char15 { animation-name: rainbow15; }
+@keyframes rainbow15 { from {filter: hue-rotate(350deg); } to {filter: hue-rotate(710deg); }  }
+
+.rainbow-char16 { animation-name: rainbow16; }
+@keyframes rainbow15 { from {filter: hue-rotate(375deg); } to {filter: hue-rotate(735deg); }  }
+
+.rainbow-char17 { animation-name: rainbow17; }
+@keyframes rainbow15 { from {filter: hue-rotate(400deg);  */
